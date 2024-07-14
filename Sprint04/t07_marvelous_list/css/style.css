@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background: #e6e6e6;
+    margin: 2em;
+    width: 60%;
+    height: 60%;
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+
+#list {
+    padding: 1em;
+    border-right: 1px solid white;
+}
+
+#list div {
+    padding: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1em;
+    padding: 1em;
+}
+
+#main img {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+}
+
+.film-info {
+    padding: 1em;
+}
+
+.actors {
+    display: flex;
+    gap: 0.5em;
+}
+
+.actor-info {
+    background-color: #0585d7;
+    color: white;
+    border-radius: 0.2em;
+    padding: 0.5em 0.5em;
+    margin: 1em 0em;
+    width: fit-content;
+    text-align: start;
+}
+
+.poster-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    box-shadow: -0.15em 0px 0px 0px #0585d7;
+}

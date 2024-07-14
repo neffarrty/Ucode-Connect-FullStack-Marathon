@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+#wrapper {
+    display: flex;
+    height: 2em;
+}
+
+input {
+    color: green;
+    padding: 0 10px;
+}
+
+input:hover {
+    color: red;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+}

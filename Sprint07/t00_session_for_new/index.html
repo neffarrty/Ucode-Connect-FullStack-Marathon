@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Session for new</title>
+        <meta name="description" content="t00. Session for new">
+        <style>
+            #superhero-form {
+                border: 2px solid gray;
+                padding: 20px;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Session for new</h1>
+        <form action="/info" method="POST" id="superhero-form">
+            <fieldset>
+                <legend>About HERO</legend>
+                <label for="name-field">Real Name</label>
+                <input type="text" id="name-field" placeholder="Superhero real name" name="name" autofocus>
+
+                <label for="alias-field">Current Alias</label>
+                <input type="text" id="alias-field" placeholder="Superhero name" name="alias">
+
+                <label for="age">Age</label>
+                <input type="number" min="1" max="999" step="1" id="age" name="age">
+                
+                <br><br>
+
+                <label for="about-field">About</label>
+                <textarea 
+                    id="about-field" 
+                    cols="70" 
+                    rows="5" 
+                    maxlength="500" 
+                    placeholder="Information about the superhero, max 500 symbols"
+                    name="about"></textarea>
+
+                <br><br>
+
+                <label for="photo-choose">Photo:</label>
+                <input type="file" id="photo-choose" name="photo">
+            </fieldset>
+            <fieldset>
+                <legend>Powers</legend>
+                <input type="checkbox" id="strength-check" name="strength-power">
+                <label for="strength-check">Telekinesis</label>
+
+                <input type="checkbox" id="speed-check" name="speed-power">
+                <label for="speed-check">Speed</label>
+
+                <input type="checkbox" id="intelligence-check" name="intelligence-power">
+                <label for="intelligence-check">Intelligence</label>
+
+                <input type="checkbox" id="teleportation-check" name="teleportation-power">
+                <label for="teleportation-check">Teleportation</label>
+
+                <input type="checkbox" id="immortal-check" name="immortal-power">
+                <label for="immortal-check">Flight</label>
+
+                <input type="checkbox" id="another-check" name="another-power">
+                <label for="another-check">Another</label>
+
+                <br><br>
+
+                <label for="control-level">Level of control</label>
+                <input type="range" min="0" max="10" step="1" value="1" id="control-level" name="control">
+            </fieldset>
+            <fieldset>
+                <legend><span>Publicity</span></legend>
+                <label for="unknown">UNKNOWN</label>
+                <input type="radio" name="powers-origin" id="unknown" value="Unknown">
+
+                <label for="ghost">LIKE A GHOST</label>
+                <input type="radio" name="powers-origin" id="ghost" value="Like a ghost">
+
+                <label for="comics">I AM ON COMICS</label>
+                <input type="radio" name="powers-origin" id="comics" value="I am on comics">
+
+                <label for="fun-club">I HAVE FUN CLUB</label>
+                <input type="radio" name="powers-origin" id="fun-club" value="I have fun club">
+
+                <label for="superstar">SUPERSTAR</label>
+                <input type="radio" name="powers-origin" id="superstar" value="Superstar">
+            </fieldset>
+            <br>
+            <input type="reset" value="CLEAR">
+            <input type="submit" value="SEND">
+        </form>
+    </body>
+</html>

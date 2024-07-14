@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hack it!</title>
+        <meta name="description" content="t01. Hack it!">
+        <style>
+            label {
+                display: block;
+            }
+            input {
+                margin: 3px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Password</h1>
+        <form action="/save" method="POST">
+            <div>Password not saved at session</div>
+            <label for="password-field">Password for saving to session</label>
+            <input type="text" name="password" id="password-field" placeholder="Password to session">
+            <label for="salt-field">Salt for saving to session</label>
+            <input type="number" name="salt" id="salt-field" placeholder="Salt to session">
+            <br>
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>

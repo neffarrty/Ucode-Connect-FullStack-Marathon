@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Superhero application</title>
+        <meta name="description" content="t07. Superhero application">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Superhero Form</h1>
+        <form id="superhero-form">
+            <fieldset>
+                <legend>About the Superhero</legend>
+                <label for="realname-field">Real Name</label>
+                <input type="text" id="realname-field" placeholder="Superhero real name" autofocus>
+
+                <label for="superhero-name-field">Superhero Name</label>
+                <input type="text" id="superhero-name-field" placeholder="Superhero name">
+
+                <label for="age">Age</label>
+                <input type="number" min="1" max="999" step="1" id="age">
+                
+                <br><br>
+
+                <label for="info-field">About</label>
+                <textarea 
+                    id="info-field" 
+                    cols="70" 
+                    rows="5" 
+                    maxlength="500" 
+                    placeholder="Information about the superhero, max 500 symbols">
+                </textarea>
+
+                <br><br>
+
+                <label for="photo-choose">Photo:</label>
+                <input type="file" id="photo-choose">
+            </fieldset>
+            <fieldset>
+                <legend>Powers</legend>
+                <input type="checkbox" id="telekinesis">
+                <label for="telekinesis">Telekinesis</label>
+
+                <input type="checkbox" id="strength-speed">
+                <label for="strength-speed">Super strength or speed</label>
+
+                <input type="checkbox" id="shapeshifting">
+                <label for="shapeshifting">Shapeshifting</label>
+
+                <input type="checkbox" id="flight">
+                <label for="flight">Flight</label>
+
+                <input type="checkbox" id="elemental-control">
+                <label for="flight">Flight</label>
+
+                <input type="checkbox" id="other-power">
+                <label for="other-power">Other</label>
+
+                <br><br>
+
+                <label for="control-level">Level of control</label>
+                <input type="range" min="0" max="10" step="1" value="1" id="control-level">
+            </fieldset>
+            <fieldset>
+                <legend><span>Origin of Powers</span></legend>
+                <label for="unknown">Unknown</label>
+                <input type="radio" name="powers-origin" id="unknown">
+
+                <label for="lab-accident">Freak lab accident</label>
+                <input type="radio" name="powers-origin" id="lab-accident">
+
+                <label for="ancient-chosen">Chosen by an ancient wise being</label>
+                <input type="radio" name="powers-origin" id="ancient-chosen">
+
+                <label for="not-human">The superhero is not human</label>
+                <input type="radio" name="powers-origin" id="not-human">
+
+                <label for="other-origin">Other</label>
+                <input type="radio" name="powers-origin" id="other-origin">
+            </fieldset>
+            <br>
+            <input type="reset" value="CLEAR">
+            <input type="submit" value="SEND">
+        </form>
+    </body>
+</html>

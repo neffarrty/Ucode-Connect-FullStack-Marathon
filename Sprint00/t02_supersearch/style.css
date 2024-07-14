@@ -1,0 +1,17 @@
+#wrapper {
+    display: flex;
+    height: 2em;
+}
+
+#search-field, #find-btn {
+    color: green;
+    padding: 0 10px 0 10px;
+}
+
+#search-field {
+    flex-grow: 1;
+}
+
+#search-field:hover, #find-btn:hover {
+    color: red;
+}

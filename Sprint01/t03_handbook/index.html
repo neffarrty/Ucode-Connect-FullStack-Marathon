@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Handbook</title>
+        <meta name="description" content="t03. Handbook">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Handbook</h1>
+        <div id="content-table">
+            <h2>Table of content</h2>
+            <ul>
+                <li><a href="#html-header">HTML</a>
+                    <ul>
+                        <li><a href="#headers">headers</a></li>
+                        <li><a href="#table">table</a></li>
+                        <li><a href="#hr">horizontal line</a></li>
+                        <li><a href="#input">input</a></li>
+                        <li><a href="#button">button</a></li>
+                    </ul>
+                </li>
+                <li><a href="#css-header">CSS</a>
+                    <ul>
+                        <li><a href="#background">background</a></li>
+                        <li><a href="#opacity">opacity</a></li>
+                        <li><a href="#line-height">line-height</a></li>
+                        <li><a href="#text-transform">text-transform</a></li>
+                        <li><a href="#border">border</a></li>
+                        <li><a href="#font-size">font-size</a></li>
+                    </ul>
+                </li>
+                <li><a href="#protocols-header">Web Protocols</a>
+                    <ul>
+                        <li><a href="#http-methods">HTTP methods</a></li>
+                        <li><a href="#status-code">HTTP status code</a></li>
+                        <li><a href="#dns-types">DNS list by types</a></li>
+                        <li><a href="#ip-identifying">Identifying google's IP</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h2 id="html-header">HTML</h2>
+        <div class="section" id="html">
+            <div class="topic" id="headers">
+                <h3>h1</h3>
+                <p>the h1 to h6 tags are used to define HTML headings</p>
+                <div class="example">
+                    <p>&lt;h1&gt;Title&lt;/h1&gt;</p>
+                    <h1>Title</h1>
+                </div>
+            </div>
+            <div class="topic" id="table">
+                <h3>table</h3>
+                <p>defines an HTML table</p>
+                <div class="example">
+                    <p>&lt;table&gt;&lt;/table&gt;</p>
+                    <table>
+                        <tr>
+                            <th>Country</th>
+                            <th>Country</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="topic" id="hr">
+                <h3>hr</h3>
+                <p>draws a horizontal line</p>
+                <div class="example">
+                    <p>&lt;hr&gt;</p>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laudantium delectus consequatur soluta? Molestiae amet.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+            <div class="topic" id="input">
+                <h3>input</h3>
+                <p>designed to create text fields, various buttons, radio buttons and checkboxes</p>
+                <div class="example">
+                    <p>&lt;input attributes&gt;</p>
+                    <label>Your name</label>
+                    <br>
+                    <input type="text">
+                    <br><br>
+                    <label>Question</label>
+                    <br>
+                    <input type="radio" name="example-radio">
+                    <label>answer</label>
+                    <br>
+                    <input type="radio" name="example-radio">
+                    <label>answer</label>
+                    <br>
+                    <input type="radio" name="example-radio">
+                    <label>answer</label>
+                </div>
+            </div>
+            <div class="topic" id="button">
+                <h3>button</h3>
+                <p>clickable button</p>
+                <div class="example">
+                    <p>&lt;button&gt;Button&lt;/button&gt;</p>
+                    <button>Button</button>
+                </div>
+            </div>
+        </div>
+        <h2 id="css-header">CSS</h2>
+        <div class="section" id="css">
+            <div class="topic" id="background">
+                <h3>background</h3>
+                <p>specifies the background of an element</p>
+                <div class="example">
+                    <p>background: [];</p>
+                    <div class="background-example"><p>Text</p></div>
+                </div>
+            </div>
+            <div class="topic" id="opacity">
+                <h3>opacity</h3>
+                <p>specifies the opacity/transparency of an element</p>
+                <div class="example">
+                    <p>opacity: 0.8;</p>
+                    <div class="opacity-example">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="topic" id="line-height">
+                <h3>line-height</h3>
+                <p>specifies the height of a line</p>
+                <div class="example">
+                    <p>line-height: 1.5;</p>
+                    <div class="line-height-example">
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic" id="text-transform">
+                <h3>text-transform</h3>
+                <p>controls the capitalization of text</p>
+                <div class="example">
+                    <p>text-transform: uppercase;</p>
+                    <div class="text-transform-example">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laudantium delectus consequatur soluta? Molestiae amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic" id="border">
+                <h3>border</h3>
+                <p>specifies the style of the outline</p>
+                <div class="example">
+                    <p>border-bottom: 2px solid #666;</p>
+                    <div class="border-example"></div>
+                </div>
+            </div>
+            <div class="topic" id="font-size">
+                <h3>font-size</h3>
+                <p>specifies the font size of the item. %,px,rem,inherit</p>
+                <div class="example">
+                    <p>font-size: 24px;</p>
+                    <div class="font-size-example">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laudantium delectus consequatur soluta? Molestiae amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="protocols-header">WEB PROTOCOLS</h2>
+        <div class="section" id="protocols">
+            <div class="topic" id="http-methods">
+                <h3>HTTP methods</h3>
+                <p> 
+                    GET - use this type of requests to retrieve
+                    resource representation/information only —
+                    and not to modify it in any way
+                </p>
+                <p>
+                    POST - used to create a new resource into the
+                    collection of resources
+                </p>
+                <p>
+                    PUT - use it primarily to update existing
+                    resource (if the resource does not exist then
+                    API may decide to create a new resource or
+                    not)
+                </p>
+                <p>
+                    DELETE - used to delete resources (identified
+                    by the Request-URI)
+                </p>
+                <p>
+                    PATCH - HTTP PATCH requests are to make
+                    partial update on a resource
+                </p>
+            </div>
+            <div class="topic" id="status-code">
+                <h3>HTTP status code</h3>
+                <p>
+                    1xx: Informational <br>
+                    example: 100 Continue
+                </p>
+                <p>
+                    2xx: Success <br>
+                    example: 201 Created
+                </p>
+                <p>
+                    3xx: Redirection <br>
+                    example: 301 Moved Permanently
+                </p>
+                <p>
+                    4xx: Client Error <br>
+                    example: 404 Not Found
+                </p>
+                <p>
+                    5xx: Server Error <br>
+                    example: 500 Internal Server Error
+                </p>
+            </div>
+            <div class="topic" id="dns-types">
+                <h3>DNS list by types</h3>
+                <p>
+                    A. (address record) - specifies IP address
+                    (Pv4) for given host. A records are used for
+                    conversion of domain names to
+                    corresponding IP addresses
+                </p>
+                <p>
+                    AAAA (IPV6 address record) - specifies IPV6
+                    address for given host. So it works the same
+                    way as the A record and the difference is the
+                    type of IP address
+                </p>
+                <p>
+                    CNAME (canonical name record) - specifies a
+                    domain name that has to be queried in order
+                    to resolve the original DNS query. Therefore
+                    CNAME records are used for creating aliases
+                    of domain names, CNAME records are truly
+                    useful when we want to alias our domain to
+                    an external domain, In other cases we can
+                    remove CNAME records and replace them
+                    with A records and even decrease
+                    performance overhead
+                </p>
+                <p>
+                    HINFO (Host Information records) - used to
+                    acquire general information about a host. The
+                    record specifies type of CPU and OS. The
+                    HINFO record data provides the possibility to
+                    use operating system specific protocols when.
+                    two hosts want to communicate. For security
+                    reasons the HINFO records are not typically
+                    used on public servers
+                </p>
+                <p>
+                    ISDN (Integrated Services Digital Network
+                    records) - specifies ISDN address for a host.
+                    An ISDN address is a telephone number that
+                    consists of a country code, a national
+                    destination code, a ISDN Subscriber number
+                    and, optionally, a ISDN subaddress. The
+                    function of the record is only variation of the
+                    Azresource record function
+                </p>
+                <p>
+                    MX (Mail exchanger record) - specifies a mail
+                    exchange server for a DNS domain name. The
+                    information is used by Simple Mail Transfer
+                    Protocol (SMTP) to route emails to proper
+                    hosts. Typically, there are more than one mail
+                    exchange server for a DNS domain and each
+                    of them have set priority
+                </p>
+                <p>
+                    NS (name server) - specifies an authoritative
+                    name server for given host
+                </p>
+                <p>
+                    PTR (Reverse-lookup Pointer records) - As
+                    opposed to forward DNS resolution (A and AAAA DNS records), 
+                    the PTR record is used to
+                    look up domain names based on an IP address
+                </p>
+                <p>
+                    SOA (Start of Authority records) - The record
+                    specifies core information about a DNS zone,
+                    including the primary name server, the email
+                    of the domain administrator, the domain
+                    serial number, and several timers relating to
+                    refreshing the zone
+                </p>
+                <p>
+                    TXT (Text records) - The text record can hold
+                    arbitrary non-formatted text string. Typically,
+                    the record is used by Sender Policy
+                    Framework (SPF) to prevent fake emails to
+                    appear to be sent by you
+                </p>
+            </div>
+            <div class="topic" id="ip-identifying">
+                <h3>Identifying google's IP</h3>
+                <p>To identify google.com IP, follow the next steps:</p>
+                <ol>
+                    <li>open Terminal</li>
+                    <li>paste and run the command nslookup google.com</li>
+                </ol>
+                <p>
+                    As result, you will receive "name" and "address": <br>
+                    Name: google.com.ua <br>
+                    Address: 216.58.215.99
+                </p>
+                <p>
+                    Repeat steps 1 and 2 to identify google.com.ua IP
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

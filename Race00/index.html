@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <meta name="description" content="Calculator">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <button id="flip-btn">&#x27F2;</button>
+            <div id="flip">
+                <div id="calculator" class="front">
+                    <div id="display">
+                        <div id="previous"></div>
+                        <div id="current">0</div>
+                    </div>
+                    <div data-digit class="button btn-1">1</div>
+                    <div data-digit class="button btn-2">2</div>
+                    <div data-digit class="button btn-3">3</div>
+                    <div data-digit class="button btn-4">4</div>
+                    <div data-digit class="button btn-5">5</div>
+                    <div data-digit class="button btn-6">6</div>
+                    <div data-digit class="button btn-7">7</div>
+                    <div data-digit class="button btn-8">8</div>
+                    <div data-digit class="button btn-9">9</div>
+                    <div data-digit class="button btn-0">0</div>
+                    <div class="button btn-dot">.</div>
+                    <div data-operation class="button btn-divide">/</div>
+                    <div data-operation class="button btn-mult">*</div>
+                    <div data-operation class="button btn-plus">+</div>
+                    <div data-operation class="button btn-minus">-</div>
+                    <div data-equals class="button btn-equals">=</div>
+                    <div data-clear class="button btn-c">C</div>
+                    <div data-delete class="button btn-ce">CE</div>
+                    <div data-negate class="button btn-negate">+/&#8722;</div>
+                    <div data-percent class="button btn-percent">%</div>
+                    <div data-factorial class="button btn-fact">!x</div>
+                    <div data-sqrt class="button btn-sqrt">√x</div>
+                    <div data-sqr class="button btn-sqr">x<sup>2</sup></div>
+                    <div data-cbr class="button btn-cbr">x<sup>3</sup></div>
+                </div>
+                <div class="back" id="converter">
+                    <label for="category-select">Select category</label>
+                    <select id="category-select" onchange="updateCategory()">
+                        <option value="length" selected>length</option>
+                        <option value="weight">weights and masses</option>
+                        <option value="area">area</option>
+                    </select>
+                    <div id="converter-label">Length</div>
+                    <input type="number" id="value-input">
+                    <select id="from-select">
+                    </select>
+                    <div>to</div>
+                    <select id="to-select">
+                    </select>
+                    <input type="button" value="Convert" onclick="convert()">
+                    <input type="number" id="result-input" readonly>
+                </div>
+            </div>
+        </div>
+        <script src="js/calculator.js"></script>
+        <script src="js/converter.js"></script>
+        <script src="js/animation.js"></script>
+    </body>
+</html>

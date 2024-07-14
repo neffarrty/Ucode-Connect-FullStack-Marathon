@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="t05. Settings">
+        <title>Settings</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Settings</h1>
+        <div id="wrapper">
+            <div id="settings">
+                <div id="typeface">
+                    <span>Typeface</span>
+                    <br>
+                    <div class="select-wrap">
+                        <select id="typeface-select">
+                            <option>Acunim Pro</option>
+                            <option>Comic Sans</option>
+                            <option disabled>Times New Roman</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="theme-switch">
+                    <span>Dark UI</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div id="font-weight">
+                    <span>Weight</span>
+                    <br>
+                    <div class="weight-wrap">
+                        <input type="checkbox" id="regular-weight">
+                        <label for="regular-weight">Regular</label>
+                        <input type="checkbox" id="bold-weight">
+                        <label for="bold-weight">Bold</label>
+                    </div>
+                </div>
+                <div id="color">
+                    <span>Color</span>
+                    <br>
+                    <div class="color-wrap">
+                        <input type="checkbox" class="color-check blue">
+                        <input type="checkbox" class="color-check green">
+                        <input type="checkbox" class="color-check pink">
+                        <input type="checkbox" class="color-check yellow">
+                        <input type="checkbox" class="color-check orange">
+                    </div>
+                </div>
+                <div id="font-size">
+                    <span>Size</span>
+                    <br>
+                    <input type="range" min="9" max="22">
+                    <div id="range-markers">
+                        <span>A</span>
+                        <span>A</span>
+                    </div>
+                </div>
+            </div>
+            <div id="side-menu">
+                <img src="assets/images/artistic-brush.png" alt="artistic brush" width="22">
+                <img src="assets/images/user-icon.png" alt="user icon" width="22">
+                <img src="assets/images/sms-speech-bubble.png" alt="speech bubble" width="22">
+                <img src="assets/images/computer-screen.png" alt="computer screen" width="22">
+            </div>
+        </div>
+    </body>
+</html>

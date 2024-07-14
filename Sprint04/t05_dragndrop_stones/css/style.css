@@ -1,0 +1,45 @@
+.stone {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.yellow { 
+    background: #d7c451;
+    top: 100px;
+    left: 150px;
+}
+
+.green { 
+    background: #45d765;
+    top: 230px;
+    left: 100px;
+}
+
+.blue { 
+    background: #0685d7;
+    top: 310px;
+    left: 220px; 
+}
+
+.red { 
+    background: #d63a54;
+    top: 350px;
+    left: 380px; 
+}
+
+.pink { 
+    background: #d7577c;
+    top: 450px;
+    left: 160px;
+}
+
+.purple { 
+    background: #a64dd7;
+    top: 200px;
+    left: 360px; 
+}
+
+.active {
+    border: 3px dashed #555454;
+}

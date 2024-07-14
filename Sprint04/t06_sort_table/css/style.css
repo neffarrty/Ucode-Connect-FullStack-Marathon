@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+table {
+    font-size: 1.2em;
+    border: 2px solid white;
+    outline: 5px solid black;
+    border-collapse: collapse;
+    align-self: center;
+}
+
+tr {
+    background-color: #d3d3d3;
+}
+
+tr:first-child {
+    background-color: #e3100e;
+}
+
+td, th {
+    width: 3.8em;
+    padding: 0.7em;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+}
+
+#service {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #808080;
+}

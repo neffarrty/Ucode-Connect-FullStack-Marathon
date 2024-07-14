@@ -1,0 +1,44 @@
+#infinity-table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#header-row {
+    background-color: black;
+    color: white;
+}
+
+tr td {
+    border: 2px solid lightgrey;
+    padding: 10px;
+}
+
+#soul-row {
+    background-color: orange;
+}
+
+#time-row {
+    background-color: green;
+}
+
+#space-row {
+    background-color: royalblue;
+}
+
+#mind-row {
+    background-color: yellow;
+}
+
+#reality-row {
+    background-color: firebrick;
+}
+
+#power-row {
+    background-color: mediumpurple;
+}
+
+.stone-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+}

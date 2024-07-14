@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5ce41;
+    font-family: Georgia, serif;
+    padding: 0px 50px;
+}
+
+body > h1, h2 {
+    text-align: center;
+}
+
+#content-table {
+    width: fit-content;
+    padding: 5px 15px 5px 0px;
+    align-self: flex-start;
+    font-size: 1em;
+}
+
+#content-table a {
+    text-decoration: none;
+    color: black;
+}
+
+#content-table li {
+    margin-top: 3px;
+}
+
+#content-table ul {
+    list-style: none;
+}
+
+.topic {
+    background-color: #FFFFFF;
+    padding: 0px 15px 10px 15px;
+}
+
+.section {
+    display: grid;
+    gap: 30px;
+}
+
+.background-example {
+    background-color: red;
+    padding: 3px 0px;
+}
+
+.opacity-example div {
+    background-color: green;
+    width: 30px;
+    height: 15px;
+}
+
+.opacity-example div:nth-child(2) {
+    opacity: 0.8;
+}
+
+.opacity-example div:nth-child(3) {
+    opacity: 0.6;
+}
+
+.opacity-example div:nth-child(4) {
+    opacity: 0.4;
+}
+
+.line-height-example {
+    line-height: 1.5;
+}
+
+.text-transform-example {
+    text-transform: uppercase;
+}
+
+.border-example {
+    width: 45px;
+    height: 45px;
+    background-color: lightgray;
+    border-bottom: 2px solid red;
+}
+
+.font-size-example {
+    font-size: 24px;
+}
+
+ol {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #html, #css, #protocols {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #html, #css {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #protocols {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #html, #css {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #protocols {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,31 @@
+.wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    animation: 5s linear infinite circle;
+}
+
+.circle:hover {
+    background-color: red;
+    transition: 2s;
+}
+
+@keyframes circle {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 150px);
+    }
+    100% {
+        left: 0;
+    }
+}

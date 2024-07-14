@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(40, 219, 228);
+    background: linear-gradient(0deg, rgba(40, 219, 228, 1) 0%, rgba(149, 62, 227, 1) 85%);
+}
+
+#flip-btn {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#flip-btn:hover {
+    background-color: #97b9e7;
+    color: white;
+}
+
+#flip {
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front, .back {
+    width: 300px;
+    font-size: 1.5em;
+    font-family: "Orbitron", sans-serif;
+    border-radius: 0.5em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.back {
+    transform: rotateY(180deg);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#calculator {
+    display: grid;
+    grid-template-areas:
+    "display display display display display"
+    "C CE negate divide percent"
+    "btn-7 btn-8 btn-9 mult fact"
+    "btn-4 btn-5 btn-6 minus sqrt"
+    "btn-1 btn-2 btn-3 plus sqr"
+    "btn-dot btn-0 equals equals cbr";
+}
+
+#display {
+    grid-area: display;
+    height: 3em;
+    background: white;
+    font-family: 'Calculator', sans-serif;
+    font-size: 1.7em;
+    text-align: end;
+    place-content: center;
+    padding: 0.5em;
+    border-radius: 25px 25px 0 0;
+}
+
+#previous {
+    font-size: 0.6em;
+    color: gray;
+}
+
+.button {
+    text-align: center;
+    min-width: 2.5em;
+    height: 2.5em;
+    background: #6b8ebd;
+    border: 0.5px solid white;
+    place-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #4e72a2;
+}
+
+.btn-c {
+    grid-area: C;
+}
+
+.btn-ce {
+    grid-area: CE;
+}
+
+.btn-negate {
+    grid-area: negate;
+}
+
+.btn-1 {
+    grid-area: btn-1;
+}
+
+.btn-2 {
+    grid-area: btn-2;
+}
+
+.btn-3 {
+    grid-area: btn-3;
+}
+
+.btn-4 {
+    grid-area: btn-4;
+}
+
+.btn-5 {
+    grid-area: btn-5;
+}
+
+.btn-6 {
+    grid-area: btn-6;
+}
+
+.btn-7 {
+    grid-area: btn-7;
+}
+
+.btn-8 {
+    grid-area: btn-8;
+}
+
+.btn-9 {
+    grid-area: btn-9;
+}
+
+.btn-0 {
+    grid-area: btn-0;
+}
+
+.btn-divide {
+    grid-area: divide;
+}
+
+.btn-mult {
+    grid-area: mult;
+}
+
+.btn-minus {
+    grid-area: minus;
+}
+
+.btn-plus {
+    grid-area: plus;
+}
+
+.btn-dot {
+    grid-area: btn-dot;
+    border-radius: 0 0 0 25px;
+}
+
+.btn-equals {
+    grid-area: equals;
+    background-color: #1da715;
+}
+
+.btn-fact {
+    grid-area: fact;
+}
+
+.btn-sqrt {
+    grid-area: sqrt;
+}
+
+.btn-sqr {
+    grid-area: sqr;
+}
+
+.btn-cbr {
+    grid-area: cbr;
+    border-radius: 0 0 25px 0;
+}
+
+button {
+    margin: 20px;
+}
+
+#converter {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    }
+
+#result-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
